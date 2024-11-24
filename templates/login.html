@@ -1,0 +1,18 @@
+<!-- FILEPATH: templates/login.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>登录与注册</title>
+</head>
+<body>
+    <h2>登录</h2>
+    <form action="/login?clientId={{clientId}}&clientSecret={{clientSecret}}" method="POST">
+        <label for="username">用户名:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="登录">
+    </form>
+</body>
+</html>
